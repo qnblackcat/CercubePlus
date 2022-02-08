@@ -68,16 +68,8 @@ Although most changes are likely to be minor, we may change our Privacy Policy f
 
 ### Changelog
 
-May 18, 2019: Initial version
-
-May 29, 2019: Updated list of ad networks.
-
-April 4, 2020: Updated list of sub-processors.
-
-November 18, 2020: Updated list of sub-processors.
-
 August 9, 2021: Updated list of sub-processors.
-
-
-
-
+November 18, 2020: Updated list of sub-processors.
+April 4, 2020: Updated list of sub-processors.
+May 29, 2019: Updated list of ad networks.
+May 18, 2019: Initial version
