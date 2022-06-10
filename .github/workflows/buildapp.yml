@@ -94,9 +94,12 @@ jobs:
           cd ${{ github.workspace }}/main
           (cd ${{ github.workspace }}/main/Tweaks/YouPiP && sed -i '' "14s#.*#YouPiP_FRAMEWORKS = AVKit AVFoundation UIKit#g" ./Makefile)
           make package FINALPACKAGE=1
+          (mv "packages/$(ls -t packages | head -n1)" "packages/CercubePlus_${{ env.YOUTUBE_VERSION  }}_${{ env.CERCUBE_VERSION }}.ipa")
           echo "::set-output name=package::$(ls -t packages | head -n1)"
         env:
           THEOS: ${{ github.workspace }}/theos
+          CERCUBE_VERSION: ${{ github.event.inputs.cercube_version }}
+          YOUTUBE_VERSION: ${{ github.event.inputs.youtube_version }}
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
